@@ -1,0 +1,5 @@
+h1-h6 Georgia
+link nav Arial
+footer h Georgia
+footer contact Times New Roman
+button Georgia

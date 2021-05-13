@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+
+    <header class="dark-grey">
+        <div class="bg-polygon"></div>
+        <div class="wrapper wrapper-header">
+            <nav class="navigate">
+                <div class="logo">IvVikt</div>
+                <span class="burger-btn" id="burger">&#8801</span>
+                <ul class="menu" id="menu">
+                    <li><a class="link" id="about">Обо мне</a></li>
+                    <li><a class="link" href="#Skills">Навыки</a></li>
+                    <li><a class="link" href="#Work">Работы</a></li>
+                    <li><a class="link" id="contacts">Контакты</a></li>
+                </ul>               
+            </nav>
+            <div class="box-hero">
+                <h1 class="hero-name"></h1>
+                <p class="hero-text"></p>
+                <a class="glitch-btn" id="about-btn">
+                    <div class="text">ОБО МНЕ</div>
+                        <div class="mask">
+                        <span>ОБО МНЕ</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="about-box" id="about-box">
+        <div class="about-container about-photo">
+
+        </div>
+        <div class="about-container about-text">
+            <h2>Немного обо мне</h2>
+            <p>Привет! Меня зовут Малахов Иван, мне 33 года.</p>
+            <p>По образованию я информатик-экономист, окончил ЮЗГУ. Имею десятилетний стаж работы в одном из ведущих банков страны. В свободное от работы время увлекся изучением языка программирования Java на платформе JAVARASH. Пройдя пару десятков уровней, я понял, что программирование - это мое.</p>
+            <p>В конце 2020г. я решил полностью изменить вид деятельности, уволился из банка и начал плотное обучение Web-разработке. На данный момент умею пользоваться: HTML, CSS, JavaScript, jQuery. Имею представление о Back-end разработке, в частности имею начальный уровень знаний и навыков по PHP и SQL. Одни из последних результатов моих работ находятся на этом сайте. Планирую и дальше изучать новое, развиваться и достичь настоящего профессионализма в Web-разработке.</p>
+        </div>
+        
+        <div class="close" id="about-btn-close"></div>
+    </div>
+
+    <a id="Skills"></a>
+    <div class="skills box">
+
+        <div class="wrapper grey-line">
+
+            <h2>Мои навыки</h2>
+
+            <div class="skills-container">
+                <div class="skill-logo"><img src="img/html_logo.svg" alt="html_logo"></div>
+                <div class="skill-logo"><img src="img/css_logo.svg" alt="css_logo"></div>
+                <div class="skill-logo"><img src="img/javascript_logo.svg" alt="javascript_logo"></div>
+                <div class="skill-logo"><img src="img/jquery_logo.svg" alt="jquery_logo"></div>
+                <div class="skill-logo"><img src="img/git_logo.svg" alt="git_logo"></div>
+                <div class="skill-logo"><img src="img/github_logo.svg" alt="github_logo"></div>
+            </div>
+        </div>
+    </div>
+
+    <a id="Work"></a>
+    <div class="work box dark-grey">
+
+        <div class="wrapper grey-line">
+
+            <h2>Мои работы</h2>
+
+            <div class="work-container">
+                <div class="work-content work-1">
+                    <a class="glitch-btn" href="work_1/index.html" target="_blank">
+                        <div class="text">РАБОТА 1</div>
+                            <div class="mask">
+                            <span>РАБОТА 1</span>
+                        </div>
+                    </a>
+                    <div class="number-work" data-content="01">01</div>    
+                </div>
+
+                <div class="work-content work-2">
+                    <a class="glitch-btn" href="work_2/index.html" target="_blank">
+                        <div class="text">РАБОТА 2</div>
+                            <div class="mask">
+                            <span>РАБОТА 2</span>
+                        </div>
+                    </a>
+                    <div class="number-work" data-content="02">02</div>
+                </div>
+
+            </div>
+        </div> 
+    </div>
+
+    <div class="contact-box" id="contact-box">
+        
+        <div class="contact-form-box">
+            <div class="contact-form contact-form-img"></div>
+            <div class="contact-form contact-form-form" id="contact-form">
+            <h2>Контакты</h2>
+            <div class="send-message">
+                <p class="snd-message">Сообщение отправлено!</p>
+                <button class="snd-message-close" id="snd-message-close">OK</button>
+            </div>
+            <div class="box-form">
+                <div class="input-box">
+                    <p>Ваше имя:*</p>
+                    <input type="text" name="name" class="input input-name" id="input-name" autocomplete="off">
+                </div>
+                
+                <div class="input-box">
+                    <p>E-mail:*</p>
+                    <input type="email" name="email" class="input input-e-mail" id="input-e-mail" autocomplete="off">
+                </div>
+                
+                <div class="input-box">
+                    <p>Ваше сообщение:*</p>
+                    <textarea name="message" class="input input-message" id="input-message"></textarea>
+                </div>
+                <button class="send-btn" id="send-btn">Отправить</button>
+            </div>    
+            
+            
+        </div>
+        <div class="close" id="form-btn-close"></div>
+    </div>
+        </div>
+        
+
+    <footer class="footer dark-grey">
+        <p>Малахов Иван</p>
+    </footer>
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

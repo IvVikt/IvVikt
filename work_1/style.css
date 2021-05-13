@@ -1,0 +1,437 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+}
+
+h2{
+    font-size: 2.25em;
+    line-height: 1.3em;
+    color: #545454;
+}
+
+h4{
+    font-size: 1.25em;
+    color: #545454;
+}
+
+a, p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9375em;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn{
+    color: #000;
+    background-color: #f1cdb3;
+    padding: 18px 45px;
+    border-radius: 26px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.wrapper{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/***********************************/
+/************Header*****************/
+/***********************************/
+
+header{
+    width: 100%;
+    color: #fff;
+    background-image: url(img/header-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/**********Navigate***********/
+
+.navigate{
+    width: 100%;
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo>h2{
+    font-size: 2em;
+    color: #f1cdb3;
+}
+
+.logo>p{
+    font-size: .8125em;
+}
+
+.menu{
+    list-style-type: none;
+    display: flex;
+}
+
+.menu li+li{
+    padding-left: 2.375em;
+}
+
+.link{
+    color: #cdcdcd;
+    position: relative;
+}
+
+.link:hover{
+    color: #fff;
+}
+
+.link:hover::before{
+    content: "";
+    position: absolute;
+    bottom: -.5em;
+    height: 3px;
+    width: 100%;
+    background-color: #f1cdb3;
+    border-radius: 2px;
+}
+
+/**************Heading**************/
+
+.heading{
+    width: 29em;
+    padding: 16em 0;
+}
+
+.heading>h1{
+    font-size: 2.75em;
+    line-height: 1.3em;
+}
+
+.heading>p{
+    color: #cdcdcd;
+    line-height: 1.6em;
+    padding: 45px 0;
+}
+
+/***********************************/
+/**************Main*****************/
+/***********************************/
+
+/**************About****************/
+
+.container-about{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.about{
+    height: 25.5em;
+    width: 27em;
+    margin: 5.65em 0;
+}
+
+.image{
+    background-image: url(img/Pets.png);
+    background-repeat: no-repeat;
+}
+
+.text>h2{
+    color: #545454;
+    padding: 1.125em 0;
+}
+
+.text>p{
+    color: #4c4c4c;
+    padding-bottom: 2.4em;
+}
+
+/**************Friends**************/
+
+.section-friends{
+    background-color: #f6f6f6;
+}
+
+.container-friends{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel-friends{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-friends h2{
+    padding: 2em 0;
+    text-align: center;
+}
+
+.container-friends a{
+    margin: 4.4em 0;
+}
+
+.carousel{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gallery{
+    width: calc(320px * 3);
+    overflow: hidden;
+}
+
+.gallery ul{
+    width: 9999px;
+    list-style: none;
+    transition: margin-left .25s;
+}
+
+.gallery li{
+    display: inline-block;
+}
+
+.carousel-box{
+    background-color: #fafafa;
+    border-radius: 1em;
+    margin: 0 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.carousel-box span{
+    display: none;
+}
+
+.carousel-box img{
+    width: 270px;
+    height: 270px;
+}
+
+.carousel-box .name{
+    padding-top: 28px;
+}
+
+.carousel-box .btn{
+    background: none;
+    border: 2px solid #f1cdb3;
+    margin-top: 25px;
+    margin-bottom: 32px;
+}
+
+.button{
+    height: 3.2em;
+    width: 3.2em;
+    border: 2px solid #f1cdb3;
+    border-radius: 50%;
+}
+
+.button.prev{
+    background: url(img/long-left-arrow.png) no-repeat center center;
+}
+
+.button.next{
+    background: url(img/long-right-arrow.png) no-repeat center center;
+}
+
+.carousel-box .btn:hover, .button:hover{
+    background-color: #f1cdb3;
+}
+
+/***********Pop-up Window*******************/
+
+.pop-up-window{
+    display: none;
+    width: 970px;
+    height: 470px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-color: #fafafa;
+    border-radius: 1em;
+}
+
+.pop-up-close{
+    position: absolute;
+    right: -4em;
+    top: -4em;
+    background: url(img/cancel.png) no-repeat center center;
+}
+
+.pop-up-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pop-up-container img{
+    width: 470px;
+    height: 470px;
+}
+
+.pop-up-box{
+    padding: 65px 42px;
+}
+
+.pop-up-box p{
+    padding: 30px 0;
+}
+
+.pop-up-box ul{
+    list-style-type: none;
+}
+
+.pop-up-box ul li{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9375em;
+}
+
+.pop-up-box ul li span{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.0625em;
+    line-height: 2em;
+}
+
+/*****************Help*********************/
+
+.container-help{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-help>h2{
+    padding: 2em 0;
+    text-align: center;
+}
+
+.list-help-box{
+    width: 100%;
+    display: flex;
+    margin-bottom: 4.5em;
+}
+
+.box-1{
+    justify-content: space-between;
+}
+
+.box-2{
+    justify-content: space-evenly;
+}
+
+.help-box{
+    height: 7em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.help-box>h4{
+    padding: 0 .5em;
+}
+
+/************Donation*************/
+
+.section-donation{
+    background-color: #f6f6f6;
+}
+
+.container-donation{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.donation-image{
+    background: url(img/Little_dog.png) no-repeat center center;
+    padding: 5em 0;
+}
+
+.donation-text{
+    width: 65%;
+    padding: 5em 0;
+}
+
+.name-bank{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #4c4c4c;
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+
+.credit-card{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    background-color: #f1cdb3;
+    padding: .75em;
+    border-radius: 10px;
+}
+
+.credit-card>p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.25em;
+    padding-left: 0.8em;
+}
+
+.card-info{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .75em;
+    line-height: 1.5em;
+    font-style: italic;
+    color: #b2b2b2;
+    padding-top: 2em;
+}
+
+/*****************Footer*******************/
+
+footer{
+    width: 100%;
+    padding: 5em 0;
+    background: url(img/footer-background.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.container-footer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 9em;
+}
+
+.contact-container>h2{
+    color: #fff;
+}
+
+.contact-box{
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.contact-box>p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.25em;
+    color: #f1cdb3;
+    padding-left: 1em;
+}
